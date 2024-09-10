@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<link rel="stylesheet" href="../css/WebProfile.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="HeroSection" id="home">
+            <div class="Menubar">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="Home">
+                <h3 class="welcome">Welcome Ragavallika</h3>
+                <img class="cardImage" src="../Images/my-passport-photo.jpg" alt="Ragavallika">
+                <h2 class="card-title">Ragavallika</h2>
+            </div>
+        </div>
+        <div class="About" id="about">
+            <h5><b>ABOUT:</b></h5>
+            <p>I am a Software developer by profession,Interested in Learning and fallowing principles of hindhuism,Cooking is a stress reliver for me, Learning to eat and be a vegiterian for life, trying to be fit.
+                 I love watching films and shows, whatever the language, I just like watching content that entertains me. In my life, I like 4F's [Family, Films, Food, Fitness].</p>
+        </div>
+        <div class="Contact" id="contact">
+            <h5><b>Contact:</b></h5>
+            <p><a href="mailto:ragavallika4.alla@gmail.com">ragavallika4.alla@gmail.com</a></p>
+            <p><a href="https://www.linkedin.com/in/ragavallika-alla-388811177/">LinkedIn Profile</a></p>
+            <p><a href="https://github.com/ragavallika4">My github Profile</a></p>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cardTitle = document.querySelector('.card-title');
+            cardTitle.addEventListener('click', () => {
+                cardTitle.style.color = 'red';
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.HeroSection {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #5ee0d1, #f36fdb);
+    color: white;
+    text-align: center;
+}
+
+.Menubar {
+    overflow: hidden;
+    position: fixed;
+    top: 10px;
+    right: 50px;
+    z-index: 1000;
+}
+
+.Menubar a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.Menubar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.Home {
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.Home .welcome {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 18px;
+    color: #660b66;
+    padding: 5px 10px;
+    border-radius: 5px;
+    animation: float 5s infinite alternate;
+}
+
+@keyframes float {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: calc(100% - 100px); 
+    }
+}
+
+.Home .cardImage {
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Home .card-title {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    color: white;
+    font-size: 24px;
+}
+
+.About {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.About h5 {
+    font-size: 20px;
+    color: #6a11cb;
+}
+
+.Contact {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.Contact h5 {
+    font-size: 20px;
+    color: #6a11cb;
+}
+
+.Contact a {
+    color: #2575fc;
+    text-decoration: none;
+}
+
+.Contact a:hover {
+    text-decoration: underline;
+}
